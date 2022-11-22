@@ -3,6 +3,6 @@
 
 npm run build
 git add .
-git commit -m 'password'
+git commit -m 'postgres'
 git push
 # ./d.sh

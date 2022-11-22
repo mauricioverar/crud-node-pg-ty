@@ -1,10 +1,18 @@
 import { Pool } from 'pg' // npm i @types/pg -D
 
+import {
+    DBHOST,
+    DBNAME,
+    DBPASSWORD,
+    DBUSER,
+    DBPORT
+  } from './config.js'
+
 // info bd postgres
 export const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    password: 'Universo1',
-    database: 'firstapi',
-    port: 5432
+    user: DBUSER,
+    host: DBHOST,
+    password: DBPASSWORD,
+    database: DBNAME,
+    port: DBPORT
 });
