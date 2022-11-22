@@ -13,6 +13,7 @@ import {
 // info bd mysql
 export const pool = createPool({ // pool = multiples conecciones
   user: DB_USER,
+  password: DB_PASSWORD,
   host: DB_HOST,
   database: DB_NAME,
   port: DB_PORT
