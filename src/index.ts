@@ -1,4 +1,5 @@
 import express from 'express' // npm i @types/express -D
+import {PORT} from './config'
 
 const app = express()
 
@@ -10,12 +11,12 @@ app.use(express.urlencoded({extended: false})) // se configura uso de formulario
 
 app.use(indexRoutes)
 
-const port: number = 3000
+// const port: number = 3000
 
 console.log('hola ty')
 
-app.listen(port, () => {
-  console.log(`server on http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`server on http://localhost:${PORT}`)
 })
 
 // ejecutar

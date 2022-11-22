@@ -1,6 +1,6 @@
 import { Pool } from 'pg' // npm i @types/pg -D
 
-// info bd
+// info bd postgres
 export const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
